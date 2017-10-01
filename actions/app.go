@@ -46,6 +46,7 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 
+		app.POST("/users/create", UsersCreate)
 	}
 
 	return app
